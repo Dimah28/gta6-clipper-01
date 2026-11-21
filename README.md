@@ -1,10 +1,20 @@
-# GTA 6 — Jason & Lucia's Wildest 34 Seconds (Vice City)
+# gta6-clipper-01
 
-[![Bounty: gta6-clipper-01](https://img.shields.io/badge/bounty-gta6--clipper--01-blue)](https://make.fun/bounty/gta6-clipper-01)
-[![Prize: $500](https://img.shields.io/badge/prize-%24500-green)](https://make.fun/bounty/gta6-clipper-01)
-[![Status: clip ready, upload pending](https://img.shields.io/badge/status-clip%20ready%2C%20upload%20pending-orange)](https://make.fun/bounty/gta6-clipper-01)
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/Dimah28/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/Dimah28/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
 
-Entry for the [make.fun bounty "Clip GTA 6 for the most YouTube views"](https://make.fun/bounty/gta6-clipper-01): a vertical Short cut from Rockstar's **Grand Theft Auto VI Trailer 2**, ranked by YouTube views — the 20 most-watched videos share **$500** (1st $100, 2nd $70, 3rd $50, 4th–10th $20, 11th–20th $14).
+A 34-second vertical GTA 6 Trailer 2 clip (Jason & Lucia in Vice City) cut by my AI agent, published as a public YouTube Short for make.fun's $500 clipper bounty, ranked by views.
+
+## Run it
+
+```sh
+MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=makefun-rose-origami-heather&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
 
 ## The clip
 
@@ -18,12 +28,12 @@ Entry for the [make.fun bounty "Clip GTA 6 for the most YouTube views"](https://
 
 Why this moment: I checked the trailer frame by frame — the rooftop-into-pool jump the current #1 uses is **not** in Trailer 2, so I did not fake it. The finale run is the trailer's densest stretch: a new shot every 1–2 seconds, explosion first, Jason & Lucia throughout, and the most iconic Vice City images. The trailer is letterboxed (1920x864 in 1920x1080), so the clip is built blur-fill — the full frame stays visible on a blurred background instead of cropping faces and jet skis out. See [CLIP.md](CLIP.md) for the exact timestamps and ffmpeg commands.
 
-## The video (upload checklist)
+## The video
 
-Upload `gta6-clipper-01-final.mp4` to the channel **Mining cuan** (https://youtube.com/@airdropcrypto673) as a **public Short**, before the deadline **23 Nov 2026 08:00 WIB**.
+Published 21 Nov 2026 ~07:46 WIB as a **public Short** on the channel **Mining cuan** (https://www.youtube.com/channel/UCphrvAUvrmOOCicgXstH1gw): https://www.youtube.com/shorts/-p8_Uq3qjG4
 
 - **Title:** `GTA 6 IS HERE 🔥 Jason & Lucia's Wildest 34 Seconds | Vice City #Shorts`
-- **Description** (paste exactly, first line word for word):
+- **Description** (first line word for word):
 
   ```
   Made by my AI agent for a $500 bounty on make.fun, where you can earn money making clips with AI: https://make.fun/bounty/gta6-clipper-01
@@ -33,14 +43,12 @@ Upload `gta6-clipper-01-final.mp4` to the channel **Mining cuan** (https://youtu
   GTA 6 Trailer 2 — Jason & Lucia, Vice City. Clip cut by my AI agent. #GTA6 #GTA6Shorts #ViceCity #Shorts
   ```
 
-- Keep it **public** until the results are out. Never buy views or use bots — that disqualifies the entry.
-
-After upload, replace the placeholder in `VIDEO.json` with the video's address from YouTube's Share button (`https://www.youtube.com/shorts/<id>`) and submit that commit.
+- Kept **public** until the results are out. Never buy views or use bots — that disqualifies the entry.
 
 ## This repository
 
 - `main.ts` — Node 22, standard library only. It validates `VIDEO.json` (a JSON object with a string `url`) and copies it byte-for-byte to `/output/VIDEO.json`. That is all the program has to do; the house reads the video's views from YouTube.
-- `VIDEO.json` — currently `{"url": "TBD-UPLOAD"}`; filled in with the real Short URL after upload.
+- `VIDEO.json` — `{"url": "https://www.youtube.com/shorts/-p8_Uq3qjG4"}`.
 - `.makefun/owner.json` — payout wallet claim for the make.fun account.
 - `CLIP.md` — how the clip was chosen, cut and rendered.
 
